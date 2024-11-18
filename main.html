@@ -21,7 +21,13 @@
 		<label for="gender_m, gender_f">Female</label>
 		
 		<label for="cars">Car Brands</label>
-		<input id="cars" type="select" required placeholder="--Please choose an option--">
+    <select id="cars" required>
+        <option value="" disabled selected>Select Cars</option>
+        <option value="Toyota">Male</option>
+        <option value="Lexus">Female</option>
+        <option value="Rolls Royce">Other</option>
+    </select>
+		
 		
 		<label for="age">Age</label>
 		<input id="age" type="number" required placeholder="Age">
@@ -37,6 +43,8 @@
 		
 		<input id="tos" type="checkbox" required>
 		<label for="tos">I agree to the TOS</label>
+
+		<button type="submit">Submit</button>
 		
 	</form>
 	<!-- the entire body must be written by student -->
